@@ -87,8 +87,8 @@ module "eks_blueprints_kubernetes_addons" {
   enable_aws_load_balancer_controller = true
   enable_metrics_server               = true
   enable_aws_cloudwatch_metrics       = true
-  enable_kubecost                     = true
-  enable_gatekeeper                   = true
+  enable_kubecost                     = false
+  enable_gatekeeper                   = false
 
   enable_cluster_autoscaler = true
   cluster_autoscaler_helm_config = {
